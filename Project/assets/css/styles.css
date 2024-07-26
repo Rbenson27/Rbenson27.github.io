@@ -1,0 +1,15 @@
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Two columns: one for the image and one for the text */
+    gap: 20px; /* Adjust the space between the image and the text */
+    align-items: start; /* Align items to the top */
+}
+
+.image {
+    width: 100%; /* Adjust the image size as needed */
+    max-width: 200px; /* Adjust the max-width as needed */
+}
+
+.text {
+    align-self: start; /* Align the text to the start (top) */
+}
