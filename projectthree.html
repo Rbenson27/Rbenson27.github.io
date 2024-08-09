@@ -23,11 +23,24 @@
 						<p>Data Analytics and Reporting</p>
 					</header>
 
+
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">Introduction</a></li>
+							<li><a href="#partone">Part One - Power Query</a></li>
+							<li><a href="#parttwo">Part Two - Enhancing data model</a></li>
+							<li><a href="#partthree">Part Three - Utilising DAX</a></li>
+							<li><a href="#partfour">Part Four - DAX Time Intelligence</a></li>
+							<li><a href="#partfive">Part Five - Data Visualisations</a></li>
+							<li><a href="#partsix">Part Six - Enhancing Visualisations</a></li>
+						</ul>
+					</nav>
+
 				<!-- Main -->
 					<div id="main">
 
 						<!-- Intro -->
-							<section id="content" class="main">
+							<section id="intro" class="main">
 								<h2>Introduction</h2>
 								<p>For my personal project, I will be working on a business scenario designed to build a solution that answers critical business questions using Power BI. In this scenario, I am a new employee at AdventureWorks Cycle, tasked by the new CEO to enhance the company's sales reporting. Previously, sales reports were generated only twice a month using Excel, which the CEO finds insufficient for timely decision-making. The goal is to transition to daily sales reporting using Power BI, providing more frequent and detailed insights without manual intervention.
 									<br><br>
@@ -36,7 +49,7 @@
 									This project is highly relevant for becoming a Business Analyst as it involves understanding business requirements, using technical tools to automate and optimize reporting processes, and delivering actionable insights. It showcases the ability to not only use Power BI's technical features but also to understand their application in solving real business problems, ultimately supporting better decision-making and operational efficiency.</p>
 							</section>
 						<!--Part One-->
-							<section id="content" class="main">
+							<section id="partone" class="main">
 								<h2>Part One - Power Query</h2>
 								<p><p> Data preparation is often the most time-intensive part of an analytics project, with an estimated 70% of the work devoted to getting data ready for reporting. This involves tasks such as removing unnecessary rows and columns, cleaning erroneous values, enhancing datasets with new columns, and merging datasets. While traditionally we relied on advanced Excel functions for this process, Power BI offers a powerful alternative with Power Query.
 									<br><br>
@@ -65,7 +78,7 @@
 							</section>
 
 						<!--Part Two-->
-							<section id="content" class="main">
+							<section id="parttwo" class="main">
 								<h2>Part Two - Enhancing the Data model</h2>
 								<p> In the second part of my project, I advanced the development of my Power BI model by focusing on creating and refining relationships between tables in the data model. I began by arranging my tables in a Star Schema format within Power BI Desktop. This organization included placing the fact table—sales transactions—at the center and surrounding it with dimension tables such as customer, product, and sales territory. This arrangement helps in visualizing the model's structure and solidifies the concept of dimensional modeling.</p>
 								
@@ -129,7 +142,7 @@
 										
 							</section>
 						<!--Part Three-->
-							<section id="content" class="main">
+							<section id="partthree" class="main">
 								<h2>Part Three - Utilising DAX</h2>
 								<p> 
 									For Part Three, I focused on understanding DAX and its applications. I began by creating basic DAX expressions and logical expressions. Following this, I explored a comprehensive case that involved creating calculated columns and measures, progressively delving deeper into more advanced concepts over three parts. Additionally, I examined the use of the filter and all functions, enhancing my ability to manipulate and analyze data efficiently within Power BI.</p>
@@ -265,7 +278,7 @@
 							</section>
 
 							<!--Part Four-->
-							<section id="content" class="main">
+							<section id="partfour" class="main">
 								<h2>Part Four - DAX Time Intelligence</h2>
 								<p> In this part, the focus was on constructing a date table and addressing the default auto date/time setting in Power BI, which needs to be disabled for better control. I covered constructing a custom date table within the model, explaining its significance for accurate time-based analysis. Establishing relationships between the order date and the sales fact table was demonstrated to ensure proper data connections. Additionally, basic time intelligence functions were explored, and an introduction to the CALCULATE function was utilised, setting the stage for more advanced data manipulation and analysis techniques.
 									</p>
@@ -365,8 +378,8 @@
 							</section>
 
 						<!--Part Five-->
-						<section id="content" class="main">
-							<h2>Part Five - Building Desketop Visualisations</h2>
+						<section id="partfive" class="main">
+							<h2>Part Five - Building Visualisations</h2>
 							<p> For Part Five, I focused on refining my data visualisation skills. I started by navigating the report view and then created a range of charts to display my data effectively. I began with a clustered column chart to compare different categories side by side, followed by a stacked bar chart to show the composition of each category. 
 								<br><br>
 								I then added a line chart to illustrate trends over time. To track key performance indicators, I set up a KPI visual and created a card visualisation to highlight important single data points. Finally, I incorporated slicers to enable interactive filtering of the data. This process allowed me to build a diverse set of visuals and enhance my data presentation capabilities.
@@ -397,9 +410,132 @@
 							</section>
 							<br>
 							<p>Furthermore, I ensured the visual supported interactive features such as drilling down and up through the hierarchy. This setup allows users to explore data from broader categories down to specific subcategories. By refining these elements, I created a functional and informative visualisation that would be effective for analysing margin percentages across various product lines.</p>
+							<p>Then, I created a Line chart by selecting the 'Order Date Year' from my Order Date table and dragging it onto the X-axis. This laid out the timeline for my visual. Next, I went to the Sales table, found the 'Total Sales' measure, and dropped it onto the Y-axis, which immediately generated the line chart, showing the sales performance across different years.</p>
+							<section>
+								<div class="section">
+								<div class="container">
+								</div>
+					
+								<div style="display: flex; align-items: flex-start;">
+									<video src="Video4.mp4" controls width="500" height="300"  style="margin-right: 10px;"> </video>
+									<p>Once the basic chart was in place, I focused on enhancing its format and visual appeal. To start, I ensured the chart was selected, then accessed the 'Format Your Visual' settings. In the Visual tab, I streamlined the design by turning off the titles for both the X and Y axes, keeping the focus on the data rather than unnecessary labels.
+										To improve readability, I enabled 'Markers,' adding dots at each data point along the line. This subtle addition made it easier to identify specific values across the timeline. I kept the markers simple to maintain the chart's clean and straightforward look.</p>
+							</section>
 							
+							
+							<p>I then moved to the General tab to fine-tune the chart's size and position. I adjusted the height to 425 and the width to 495, ensuring it fit neatly within the report. Finally, I positioned the chart at coordinates 40 (horizontal) and 255 (vertical), aligning it perfectly with other report elements.</p>
+							<p>Finally, I added a title to the chart, naming it 'Sales Performance', and made sure the title was bolded to stand out. This consistent titling approach was applied to other visuals in my report as well, ensuring a uniform look and feel.
 
+								With these steps, I created a clear, informative line chart that effectively communicates the sales trends over the years, fitting seamlessly into the overall project.</p>
+							<p>Next for my dashboard I wanted to create a KPI visual, I began by defining a target measure—a simple, static value of $7 million—to serve as a benchmark for comparison. Although in a real-world scenario, this target would be more complex and based on various parameters like dates, products, and territories, for this project, I kept it straightforward.</p>
+							<section>
+								<div class="section">
+								<div class="container">
+								</div>
+					
+								<div style="display: flex; align-items: flex-start;">
+								<img src="images/visualisation3.jpg" alt="" style="margin-right: 10px; width: 650px;">
+								<p>After setting the target, I built the KPI visual by first dragging the total sales figure into the value field. I then added the order date year to the trend axis and used the $7 million target as the benchmark. This setup allowed the KPI visual to display a green indicator, confirming that our $9.74 million sales exceeded the target.</p>
+							</section>
 							
+							<p>To finalise the visual, I customised the format by increasing the callout value font size to 30, aligning everything centrally, and adjusting the display units to millions. I also disabled the trend axis and distance to goal cards to keep the visual clean. Finally, I adjusted the visual's size and position, and added a bold title, “Total Sales,” ensuring it was clearly visible and well-aligned within the report.</p>
+							<section>
+								<div class="section">
+								<div class="container">
+								</div>
+					
+								<div style="display: flex; align-items: flex-start;">
+								<img src="images/visualisation4.jpg" alt="" style="margin-right: 10px; width: 650px;">
+								<p>To create the card visual, I first selected the card option from the visualizations pane and positioned it within the layout. I linked it to the target value from the sales table, ensuring the target was clearly displayed. Next, I adjusted the callout value to a font size of 30 to match the KPI card, and turned off the category label for a cleaner look. Finally, I added a bold title labelled "Target" and positioned the card precisely for a polished finish.</p>
+							</section>
+							<section>
+								<div class="section">
+								<div class="container">
+								</div>
+					
+								<div style="display: flex; align-items: flex-start;">
+									<video src="Video5.mp4" controls width="500" height="300"  style="margin-right: 10px;"> </video>
+									<p>To enhance the interactivity of my Power BI report, I added two slicers, ensuring they were both functional and visually consistent. First, I created a slicer linked to the Sales Territory Continent data, formatted as a dropdown for a clean look. I enabled multi-row selection and added a “Select All” option for flexibility. I customised the slicer header, renaming it to "Continent" and bolding the font for clarity. Then, I duplicated this slicer to create a Year slicer, adjusting the data source and formatting accordingly. This efficient method maintained consistent design while saving time. Finally, I positioned and resized both slicers to ensure they fit seamlessly within the report's layout. These slicers provide an intuitive way for users to filter data, enhancing the overall usability of the report.</p>
+							</section>
+						</section>
+				<!--Part Six-->
+						<section id="partsix" class="main">
+							<h2>Part Six - Enhancing Visualisations</h2>
+							<p>During my next step of the project, I explored advanced Power BI features to enhance my reports. I added a canvas background and theme for a consistent design, adjusted visuals, and created a custom tooltip for interactivity. I implemented drill-through, conditional formatting, and built an order date hierarchy with drill-down functionality. I also edited visual interactions, used the selection and bookmarks panes for organisation, and explored the filters pane. Then, I examined the structure of a PBX file to understand how Power BI manages report data.</p>
+							<p>To enhance the visual appeal of my Power BI report, I added custom canvas backgrounds to each page, transforming the overall look from plain to professional. I started by selecting a suitable image for the overview page, ensuring the canvas background was in focus. After selecting the image, I adjusted the fit and set the transparency to zero, allowing the background to seamlessly integrate with the visuals. I repeated this process for other pages, selecting different backgrounds and making minor adjustments to fit the framing perfectly. Additionally, I renamed the pages to give them more meaningful titles, like "DAX Demos" and "Product Sales Details." These changes significantly improved the aesthetic quality of the report, making it more engaging and polished.</p>
+							<p>The Before and After - *Slight differences in data due to completion of project*</p>
+							<section>
+								<div class="section">
+								<div class="container">
+								</div>
+					
+								<div style="display: flex; align-items: flex-start;">
+								<img src="images/visualisation5.jpg" alt="" style="margin-right: 10px; width: 650px;">
+								<img src="images/visualisation6.jpg" alt="" style="margin-right: 10px; width: 650px;">
+							</section>
+							<section>
+								<div class="section">
+								<div class="container">
+								</div>
+					
+								<div style="display: flex; align-items: flex-start;">
+								<img src="images/visualisation7.jpg" alt="" style="margin-right: 10px; width: 650px;">
+								<img src="images/visualisation8.jpg" alt="" style="margin-right: 10px; width: 650px;">
+							</section>
+							<section>
+								<div class="section">
+								<div class="container">
+								</div>
+					
+								<div style="display: flex; align-items: flex-start;">
+								<img src="images/visualisation9.jpg" alt="" style="margin-right: 10px; width: 650px;">
+								<img src="images/visualisation10.jpg" alt="" style="margin-right: 10px; width: 650px;">
+							</section>
+							<br><br>
+							<section>
+								<div class="section">
+								<div class="container">
+								</div>
+					
+								<div style="display: flex; align-items: flex-start;">
+									<video src="Video6.mp4" controls width="500" height="300"  style="margin-right: 10px;"> </video>
+									<p>Next, I decided to enhance the user experience by creating a custom tool tip for a clustered column chart, replacing the default one with something more insightful. I began by creating a new page named "Sales Regions" and enabled it for use as a tool tip. I then adjusted the page settings to fit the tool tip layout. To make the tool tip meaningful, I added a pie chart to this page, which dynamically reflects the sales data by country. After setting up the visual elements
+										I customised the chart by removing the legend, adjusting the detail labels, and formatting the title to display "Total Sales by Country" in a bold, professional font. I then linked this tool tip to the main chart on the overview page by configuring the tool tip settings to display the newly created page when hovering over specific regions. This added a layer of interactivity, allowing users to see detailed sales data by country instantly, making the report not only more informative but also visually engaging.</p>
+							</section>
+							<section>
+								<div class="section">
+								<div class="container">
+								</div>
+					
+								<div style="display: flex; align-items: flex-start;">
+								<img src="images/visualisation11.jpg" alt="" style="margin-right: 10px; width: 650px;">
+								<p>Following, I utilised conditional formatting to enhance the visual appeal and clarity of the data, ensuring that key trends are immediately noticeable. First, I selected the specific visual I wanted to format and set the format style to "Rules," applying it to the "Total Sales Year Over Year Percentage" field. I opted to display icons to the left of the data, aligning them at the top, and chose an icon set that visually represents performance. For the rules, I configured values so that increases between 0% and 100% appear in yellow, negative changes in red, and increases over 100% in green. This allows for an intuitive, colour-coded assessment of performance at a glance.</p>
+							</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
