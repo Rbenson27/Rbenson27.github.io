@@ -16,39 +16,496 @@
 
 		<!-- Wrapper -->
 			<div id="wrapper">
-
+			</div>
 				<!-- Header -->
 					<header id="header">
-						<h1>Project Three - SQL Project</h1>
+						<h1>Project Three - SQLite Project</h1>
 						<p></p>
 					</header>
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">Introduction</a></li>
+							<li><a href="#partone">Task 1</a></li>
+							<li><a href="#parttwo">Task 2</a></li>
+							<li><a href="#partthree">Task 3</a></li>
+							<li><a href="#partfour">Task 4</a></li>
+							<li><a href="#partfive">Task 5</a></li>
+							<li><a href="#partsix">Task 6</a></li>
+							<li><a href="#partseven">Task 7</a></li>
+							<li><a href="#parteight">Task 8</a></li>
+							<li><a href="#partnine">Task 9</a></li>
+							<li><a href="#partten"> Task 10</a></li>
+							<li><a href="#parteleven">Task 11</a></li>
+							<li><a href="#parttwelve">Task 12</a></li>
+							<li><a href="#partthirteen">Task 13</a></li>
+							<li><a href="#partfourteen">Task 14</a></li>
+							<li><a href="#summary">Summary</a></li>
+							
+						</ul>
+					</nav>
 
 				<!-- Main -->
 					<div id="main">
 
-						
-
-					</div>
-
-
+				<!-- Intro -->
+				<section id="intro" class="main">
+					<h2><STRONG>Introduction</STRONG></h2>
+					<p>In this project, I undertook a variety of data analysis tasks for WSDA Music, showcasing essential skills for a Graduate Business Analyst. My work involved complex SQL queries and data manipulation, critical for informed business decision-making. I started by analysing invoice data to identify patterns in billing cities and sales trends, employing SQL’s filtering and aggregation functions to deliver actionable insights.
+						<br><br>
+						I produced detailed reports on invoice categories, employee performance, and sales metrics, enhancing my ability to translate raw data into strategic recommendations. Additionally, I developed comprehensive mailing address fields and streamlined postal codes to improve data quality and usability.
+						<br><br>
+						My analysis extended to calculating employee ages and formatting dates for enhanced clarity and precision. I also compared global and city-specific sales averages and identified unsold tracks, demonstrating my proficiency in handling large datasets and deriving meaningful insights.
+						<br><br>
+						This project highlights my capability to apply analytical skills to real-world scenarios, a crucial competency for a Graduate Business Analyst. By effectively using SQL to drive data-driven decisions, I am well-prepared to contribute valuable insights and support strategic initiatives in a business setting.</p>
+				</section>	
+				<!--TaskOne-->
+				<section id="partone" class="main">
+					<h2><STRONG>Task 1</STRONG> </h2>
+					<p>Task Completed for WSDA Music
+						<BR><BR>
+							WSDA Music’s management requested to find out how many invoices were billed in cities that start with the letter 'B'. To address this, I used SQL to filter the BillingCity column based on our criteria.</p>
+					<section>	
 						<section>
-							<h2>Contact Information</h2>
-							<dl class="alt">
-								<dt>Phone</dt>
-								<dd>+44 7415821677</dd>
-								<dt>Email</dt>
-								<dd><a href="#">rbenson29@outlook.com</a></dd>
-							</dl>
-							<ul class="icons">
-								<li><a href="https://www.linkedin.com/in/ross-benson-43088316a" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://wa.link/rz2y3f" class="icon brands fa-whatsapp alt"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.instagram.com/rbenson__/" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-							</ul>
+							<div class="section">
+							<div class="container">
+							</div>
+					
+							<div style="display: flex; align-items: flex-start;">
+							<img src="images/SQL4.jpg" alt="" style="margin-right: 10px; width: 350px;">
+							<p>Steps Taken:
+								<BR><BR>
+								Initial Query: I began by updating the WHERE clause in the SQL statement to use the LIKE operator with the % wildcard. This allowed me to select cities where the BillingCity starts with 'B', with the wildcard handling any characters following 'B'. Running this query, I found 62 invoices from cities starting with 'B'.
+								<br><br>
+								Further Request: Management then wanted to know the number of invoices from cities containing 'B' anywhere in their name. I modified the query by placing the % wildcard before and after 'B', which allowed for any 'B' in the city name. This adjustment resulted in 83 invoices.
+								<br><br>
+								The updated SQL query effectively met the requirements, and I reported that there were 83 invoices billed in cities with 'B' anywhere in the name.</p>
 						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+					</section>
+				</section>
+				<!--TaskTwo-->
+				<section id="parttwo" class="main">
+					<h2><STRONG>Task 2 </STRONG></h2>
+					<p>Task Completed for WSDA Music
+						<BR><BR>
+							Management at WSDA Music requested a report on invoices from cities where the billing city starts with either 'P' or 'D'. To fulfil this request, I adjusted the SQL query to capture these criteria.</p>
+					<section>	
+						<section>
+							<div class="section">
+							<div class="container">
+							</div>
+					
+							<div style="display: flex; align-items: flex-start;">
+							<img src="images/SQL5.jpg" alt="" style="margin-right: 10px; width: 350px;">
+							<p>Steps Taken:
+								<br><br>
+								Update Query Criteria: I modified the existing query to filter for cities starting with 'P' or 'D'. I used the LIKE operator with the % wildcard character to handle partial matches for both criteria.
+								<br><br>
+								Constructed SQL Statement: I specified the BillingCity field and created two conditions: one for cities starting with 'P' and another for cities starting with 'D'. I used the OR operator to include records that meet either condition. The final query was WHERE BillingCity LIKE 'P%' OR BillingCity LIKE 'D%'.
+								<br><br>
+								Executed Query: Running the updated query, I retrieved 56 invoices where the billing city starts with 'P' or 'D'.
+								<br><br>
+								I reported to WSDA Music that there are 56 invoices satisfying the request, meeting the criteria of cities beginning with 'P' or 'D'.</p>
+						</section>
+					</section>
+				</section>
+				<!--TaskThree-->
+				<section id="partthree" class="main">
+					<h2><STRONG>Task 3 </STRONG></h2>
+					<p>Task Completed for WSDA Music
+						<BR><BR>
+							WSDA Music management wanted to categorise invoice totals into specific sales brackets to analyse spending patterns. The categories were: baseline purchase (under $2), low purchase ($2 to $6.99), target purchase ($7 to $15), and top performer (above $15). They also sought to filter and analyse these categories further to gain deeper insights.</p>
+					<section>	
+						<section>
+							<div class="section">
+							<div class="container">
+							</div>
+					
+							<div style="display: flex; align-items: flex-start;">
+							<img src="images/SQL6.jpg" alt="" style="margin-right: 10px; width: 450px;">
+							<p>Steps Taken:
+								<br><br>
+								Created Categories Using SQL: I employed the CASE statement in SQL to define categories based on invoice totals. Each range was assigned a label: baseline purchase, low purchase, target purchase, or top performer. The CASE statement allowed me to create a new column called purchase_type with these labels.
+								<br><br>
+								Executed and Verified Query: I ran the query and verified that the new purchase_type column accurately reflected the specified categories. The results included invoices classified correctly according to the defined ranges.
+								<br><br>
+								Refined Analysis: To meet further management needs, I applied a WHERE clause to filter for only top-performing sales. This adjustment focused the analysis on cities contributing to high-value invoices, revealing that many top-performing cities were outside the United States.
+								<br><br>
+								By implementing these SQL techniques, I provided WSDA Music with detailed insights into their sales data, enabling more targeted decision-making.</p>
+						</section>
+					</section>
+				</section>
+				<!--TaskFour-->
+				<section id="partfour" class="main">
+					<h2><STRONG>Task 4 </STRONG></h2>
+					<p>Task Completed for WSDA Music
+						<BR><BR>
+							WSDA Music requested a report that combines information from their customer and invoice tables. Specifically, they wanted to see a list of customers alongside their associated invoices, including details such as invoice ID, customer ID, invoice date, and total amount.</p>
+					<section>	
+						<section>
+							<div class="section">
+							<div class="container">
+							</div>
+					
+							<div style="display: flex; align-items: flex-start;">
+							<img src="images/SQL7.jpg" alt="" style="margin-right: 10px; width: 450px;">
+							<p>Steps Taken:
+								<br><br>
+								Aliased Tables: To streamline the query and avoid ambiguity, I created aliases for the tables. I aliased the invoice table as I and the customer table as C. This simplification made it easier to reference fields from both tables in the query.
+								<br><br>
+								Updated SQL Syntax: I modified the SQL query to use these aliases. Instead of writing out full table names, I used I for invoice and C for customer. This approach not only reduced the amount of typing but also clarified which table each field came from.
+								<br><br>
+								Selected Relevant Fields: I specified the fields relevant to the request: the customer’s last name and first name, and from the invoice table, the invoice ID, customer ID, invoice date, and total amount. I ensured that each field was properly referenced using the table aliases.
+								<br><br>
+								</p>
+						</section>
+						<p>Ran the Query: I executed the updated query, resulting in a clean and concise report that accurately displays the requested information. The output includes the customer details alongside their invoices, showing when the invoices were issued and their respective totals.
+						<br><br>
+						By completing this task, I provided WSDA Music with a clear and detailed view of their customer and invoice data, fulfilling their request effectively.</p>
+					</section>
+				</section>
+				<!--TaskFive-->
+				<section id="partfive" class="main">
+					<h2><STRONG>Task 5 </STRONG></h2>
+					<p>Task Completed for WSDA Music
+						<BR><BR>
+							WSDA Music Management requested a report identifying the employees responsible for the 10 highest individual sales. The goal was to determine which employees achieved the top 10 sales totals.</p>
+					<section>	
+						<section>
+							<div class="section">
+							<div class="container">
+							</div>
+					
+							<div style="display: flex; align-items: flex-start;">
+							<img src="images/SQL7.jpg" alt="" style="margin-right: 10px; width: 450px;">
+							<p>Steps Taken:
+								<BR><BR>
+								Constructed the Query: I began by building the SQL query to address the request. I started with the Invoice table, which I aliased as i. I then joined the Invoice table with the Customer table, aliased as c, on the CustomerId field. This allowed me to link invoice details to customer information.
+								<BR><BR>
+								Added the Employee Table: Next, I joined the Employee table, aliased as e, using the support representative field from the Customer table and the EmployeeId field from the Employee table. This step connected each invoice to the employee who handled the customer.
+								<BR><BR>
+								Specified the Fields: In the SELECT statement, I included fields such as employee first and last names, employee ID, customer first and last names, support representative ID, customer ID, and the invoice total.</p>
+								<BR><BR>
+							
+						</section>
+						<P>Ordered and Limited Results: To focus on the top 10 sales, I used the ORDER BY clause to sort results by the invoice total in descending order. I then applied the LIMIT clause to restrict the output to the top 10 records.
+							<BR><BR>
+								Executed the Query: Running the final query produced a list showing the top 10 highest individual sales, including details of the employees who achieved these sales.
+							<BR><BR>
+								This report now effectively responds to WSDA Music Management’s request by highlighting the top performers based on individual sales totals.</p>
+					</section>
+				</section>
+				<!--TaskSix-->
+				<section id="partsix" class="main">
+					<h2><STRONG>Task 6 </STRONG></h2>
+					<p>Tasks Completed for WSDA Music
+						<BR><BR>
+						1. Create a comprehensive mailing address field for US-based customers that includes their first name, last name, full address (street, city, state, zip code).
+						<br>
+						2. Modify the postal codes to only include the first five digits by removing any additional digits.
+						
+					<section>	
+						<section>
+							<div class="section">
+							<div class="container">
+							</div>
+					
+							<div style="display: flex; align-items: flex-start;">
+							<img src="images/SQL9.jpg" alt="" style="margin-right: 10px; width: 650px;">
+							<p>Steps Taken:
+								Constructed a Comprehensive Mailing Address:
+								<BR>
+								I began by creating a single field that combines the customer’s first name, last name, and full address. Using SQL string functions, I concatenated these fields to build a complete mailing address.
+								<br><br>I used the double pipe operator (||) to concatenate the FirstName, LastName, and Address fields. To ensure readability, I added spaces and commas where appropriate.
+								<br><br>The final address format included the first and last names, followed by the street address, city, state, and zip code. I formatted the output to make it easy to read and labelled this new field as MailingAddress.
+								Shortened Postal Codes:</p>
 
-			</div>
+							
+						</section>
+						<P>WSDA Music requested that we refine the postal codes by removing the extra digits (zip+4 code) and retaining only the primary five digits.
+							I used the SUBSTR function to extract the first five digits of the postal codes. By specifying the starting position and the length of the substring, I effectively truncated the zip+4 code to just the five-digit postal code.
+							The updated field, labelled FiveDigitPostalCode, now contains only the primary five digits of the postal codes.
+							<BR><BR>
+							With these steps, I have created a detailed mailing address field for US-based customers, simplified postal codes, and demonstrated the use of string functions to modify text formatting. This comprehensive approach addresses WSDA Music’s needs for a refined and formatted mailing list.
+						</p>
+					</section>
+				</section>
+				<!--TaskSeven-->
+				<section id="partseven" class="main">
+					<h2><STRONG>Task 7 </STRONG></h2>
+					<p>Tasks Completed for WSDA Music
+						<BR><BR>
+							1. Calculate the ages of employees based on their birthdates.
+							<br>2. Format the birthdates to exclude time information and present them in a simplified date format.
+						</p>
+					<section>	
+						<section>
+							<div class="section">
+							<div class="container">
+							</div>
+					
+							<div style="display: flex; align-items: flex-start;">
+							<img src="images/SQL10.jpg" alt="" style="margin-right: 10px; width: 650px;">
+							<p>Steps Taken:
+								Formatted Birthdates:
+								To address the request from WSDA Music, I first needed to convert the birthdate field from a full date-time format (year, month, day, hour, minute, second) to just a date format (year, month, day).
+								<br><br>I achieved this by using the strftime function in SQL. I specified the format as '%Y-%m-%d' which denotes the year, month, and day.
+								<br><br>I added a new column to the query that used strftime to format the birthdate field. I aliased this column as Birthdate_No_Time_Code to clearly indicate that it only includes the date component without the time.</p>
+
+							
+						</section>
+						<P>Calculated Employee Ages:
+							<br>
+							To calculate the ages of employees, I introduced another column that computes the difference between the current date and each employee's birthdate.
+							<br><br>I used the strftime function again to format both the current date and the birthdate. For the current date, I utilised the now function, which provides the present date and time.
+							<br><br>The strftime function was applied to both the current date and the birthdate in the same format ('%Y-%m-%d'), and then I subtracted the birthdate from the current date to determine the age.
+							I created a new column for this calculation and aliased it as Age. This column now displays the computed age for each employee based on the difference between the current date and their birthdate.
+							<br><br>With these modifications, I successfully formatted the birthdates to only include the date and calculated the ages of all employees. I can now present this updated report to WSDA Music, providing them with a clear view of each employee's age.
+						</p>
+					</section>
+				</section>
+				<!--TaskEight-->
+				<section id="parteight" class="main">
+					<h2><STRONG>Task 8 </STRONG></h2>
+					<p>Tasks Completed for WSDA Music
+						<BR><BR>
+							1. Calculate the total global sales of all time using the invoice table.
+							<br>2. Compute additional aggregate metrics including average sales, maximum sale, minimum sale, and sales count.</p>
+					<section>	
+						<section>
+							<div class="section">
+							<div class="container">
+							</div>
+					
+							<div style="display: flex; align-items: flex-start;">
+							<img src="images/SQL11.jpg" alt="" style="margin-right: 10px; width: 450px;">
+							<p>Steps Taken:
+								Calculated Total Global Sales:<br>
+								I started by focusing on the invoice table, as it contains the sales data needed.
+								<br><br>I used the SUM aggregate function to calculate the total global sales. I specified the total field within the invoice table and aliased this result as Total_Sales.
+								<br><br>Running this query provided a grand total of $3,329.46, which answered WSDA Music Management's request for the total global sales of all time.</p>
+						</section>
+						<P>Computed Additional Aggregate Metrics:<br>
+
+							I enhanced the query by including more aggregate functions to provide a comprehensive overview of sales data:
+							<br><br>Average Sales: I used the AVG function on the total field and aliased this as Average_Sales. This gave the average sale amount.
+							<br><br>Maximum Sale: I applied the MAX function to determine the highest sale amount and aliased this as Maximum_Sale. The result was $1,000.86.
+							<br><br>Minimum Sale: I used the MIN function to find the lowest sale amount and named it Minimum_Sale.
+							<br><br>Sales Count: To count the total number of sales records, I used the COUNT function with a star (*) and aliased this as Sales_Count.
+							
+							<br><br>
+							By completing these tasks, I have provided WSDA Music with detailed sales metrics and demonstrated the application of aggregate functions to summarise and analyse sales data efficiently.						
+						</P>
+					</section>
+				</section>
+				<!--TaskNine-->
+				<section id="partnine" class="main">
+					<h2><STRONG>Task 9 </STRONG></h2>
+					<p>Task Completed for WSDA Music
+						<BR><BR>
+							WSDA Music Management requested a calculation of the average invoice amount by BillingCity. The goal was to determine the average invoice totals for each city listed in the Invoice table.</p>
+					<section>	
+						<section>
+							<div class="section">
+							<div class="container">
+							</div>
+					
+							<div style="display: flex; align-items: flex-start;">
+							<img src="images/SQL12.jpg" alt="" style="margin-right: 10px; width: 250px;">
+							<p>Steps Taken:
+								<BR><BR>
+								I started by drafting a SQL query that specified the Invoice table in the FROM clause. To display the average invoice totals, I included the BillingCity field and used the AVG function on the total column in the SELECT clause. Initially, this query provided a global average for all invoices instead of the average by each city.
+								<BR><BR>
+								To correct this, I incorporated a GROUP BY clause, grouping the results by BillingCity. This change ensured that the AVG function calculated the average invoice amount separately for each city. Additionally, I added an ORDER BY clause to sort the results in ascending order by city name.
+								<BR><BR>
+								To further enhance the report, I wrapped the AVG function with a ROUND function to format the average amounts to two decimal places. This adjustment provided a clearer, more precise view of the average invoice amounts by city.
+								<BR><BR>
+								With these modifications, the report now effectively displays the average invoice amount for each billing city, meeting the request from WSDA Music Management.
+							</p>
+						</section>
+					</section>
+				</section>
+				<!--TasktEN-->
+				<section id="partten" class="main">
+					<h2><STRONG>Task 10 </STRONG></h2>
+					<p>Task Completed for WSDA Music
+						<BR><BR>
+							WSDA Music Management requested an update to find all average invoice totals greater than $5</p>
+					<section>	
+						<section>
+							<div class="section">
+							<div class="container">
+							</div>
+					
+							<div style="display: flex; align-items: flex-start;">
+							<img src="images/SQL13.jpg" alt="" style="margin-right: 10px; width: 250px;">
+							<p>Steps Taken:<br><BR>
+								I began by updating our SQL query to reflect the new requirement. Initially, our query used a WHERE clause to filter billing cities, but this did not work for filtering based on aggregate functions like AVG. I replaced the WHERE clause with a HAVING clause, which is specifically designed for filtering results based on aggregate functions.
+								<br><br>I included the HAVING clause after the GROUP BY clause and specified the condition that the average invoice total should be greater than $5. This adjustment correctly applied the filter to our aggregated data. After running the updated query, I verified that it now displayed average invoice totals exceeding $5 without errors.
+								<br><br>The final query now accurately reflects the average invoice amounts that meet the specified condition, effectively fulfilling the request from WSDA Music Management.
+							</p>
+						</section>
+					</section>
+				</section>
+				<!--TaskELEVEN-->
+				<section id="parteleven" class="main">
+					<h2><STRONG>Task 11 </STRONG></h2>
+					<p>Task Completed for WSDA Music
+						<BR><BR>
+							WSDA Music Management requested a report on all invoices with totals lower than the average invoice total. We needed to create a query to filter and display invoices where the total was less than this average.</p>
+					<section>	
+						<section>
+							<div class="section">
+							<div class="container">
+							</div>
+					
+							<div style="display: flex; align-items: flex-start;">
+							<img src="images/SQL14.jpg" alt="" style="margin-right: 10px; width: 550px;">
+							<p>Steps Taken:<br><BR>
+								To address the task, I constructed a SQL query using a subquery to handle the comparison. First, I identified the average invoice total from our invoice table, which was $8.06. Next, I used this average value to filter the invoices.
+								<br><br>
+								In the main query, I included a WHERE clause with a subquery. This subquery, enclosed in parentheses, computed the average invoice total from the invoice table. By placing this subquery inside the WHERE clause, I could compare each invoice's total to the computed average.
+								<br><br>
+								After running the query, I verified that it successfully returned all invoices with totals less than $8.06. The results were sorted in descending order, confirming that they were correctly filtered according to the average amount. This approach efficiently met the request from WSDA Music Management.
+								
+							</p>
+						</section>
+					</section>
+				</section>
+				<!--TaskTwelve-->
+				<section id="parttwelve" class="main">
+					<h2><STRONG>Task 12 </STRONG></h2>
+					<p>Task Completed for WSDA Music
+						<BR><BR>
+							WSDA Music Management requested a comparison of each city's average sales against the global average sales. Specifically, they wanted to see how individual city averages stacked up next to the overall average sales.</p>
+					<section>	
+						<section>
+							<div class="section">
+							<div class="container">
+							</div>
+					
+							<div style="display: flex; align-items: flex-start;">
+							<img src="images/sql15.jpg" alt="" style="margin-right: 10px; width: 550px;">
+							<p>Steps Taken:<br><BR>
+								To fulfil this request, I crafted a SQL query that provided a side-by-side comparison of each city's average sales and the global average. I started by selecting data from the invoice table and included the billing city field, as well as the average total for each city, using the GROUP BY clause to aggregate the results by city.
+							 	<br><br>
+								Next, to include the global average sales for comparison, I used a subquery within the SELECT clause. This subquery calculated the global average by selecting the average total from the entire invoice table. I then aliased the columns for clarity, labelling them as city average and global average.
+								<br><br>
+								By running the query, I obtained a result showing each city’s average sales alongside the global average, enabling an easy comparison. This successfully addressed WSDA Music Management's query about city performance relative to the global average.
+								
+							</p>
+						</section>
+					</section>
+				</section>
+				<!--TaskThirteen-->
+				<section id="partthirteen" class="main">
+					<h2><STRONG>Task 13 </STRONG></h2>
+					<p>Task Completed for WSDA Music
+						<BR><BR>
+							WSDA Music Management requested information about whether any purchases were made on specific days associated with three particular invoices.</p>
+					<section>	
+						<section>
+							<div class="section">
+							<div class="container">
+							</div>
+					
+							<div style="display: flex; align-items: flex-start;">
+							<img src="images/SQL16.jpg" alt="" style="margin-right: 10px; width: 550px;">
+							<p>Steps Taken:<br><BR>
+								To address this request, I first created a subquery to identify the invoice dates for the three specific invoices. This involved using the IN operator to select these invoices and retrieve their corresponding dates.
+								<br><br>
+								Next, I used this subquery within a larger query to determine if any purchases were made on these dates. I wrapped the original query (which retrieved the invoice dates) in parentheses to form a subquery. In the outer query, I selected relevant fields from the invoice table, such as the invoice date, billing address, and billing city. I then employed the IN clause in the WHERE condition to filter invoices that match the dates obtained from the subquery.
+								<br><br>
+								By executing this query, I successfully identified any purchases made on the specified dates, effectively responding to the request from WSDA Music Management.
+							</p>
+						</section>
+					</section>
+				</section>
+				<!--TaskFourteen-->
+				<section id="partfourteen" class="main">
+					<h2><STRONG>Task 14 </STRONG></h2>
+					<p>Task Completed for WSDA Music
+						<BR><BR>
+							WSDA Music Management asked me to identify which tracks in our database are not currently selling. Specifically, they wanted to find tracks listed in the track table that do not appear in the invoice line table.</p>
+					<section>	
+						<section>
+							<div class="section">
+							<div class="container">
+							</div>
+					
+							<div style="display: flex; align-items: flex-start;">
+							<img src="images/SQL17.jpg" alt="" style="margin-right: 10px; width: 550px;">
+							<p>Steps Taken:<br><BR>
+								To address this request, I first ran a query to get a distinct list of all tracks from the invoice line table to determine which tracks had been purchased. By using the DISTINCT keyword, I was able to filter out duplicate entries, reducing the record count from 2,240 to 1,984 rows.
+								<br><br>
+								Next, I modified my approach to identify tracks that are not included in this list. I created a subquery that selected track IDs from the invoice line table. I then used this subquery in the outer query to find tracks from the track table that were not in the results of the subquery. This was accomplished using the NOT IN operator.
+								<br><br>
+								Running this final query, I obtained a list of 1,519 tracks that are not selling, including track ID seven, which confirmed that the query effectively identified unsold tracks. This result meets the request from WSDA Music Management, and I am ready to provide them with the data they need for further analysis.
+							</p>
+						</section>
+					</section>
+				</section>
+				<!--Summary-->
+				<section id="summary" class="main">
+					<h2><STRONG>Project Summary: Data Analysis for WSDA Music</STRONG></h2>
+					<p>This project involved a comprehensive analysis of invoice and customer data for WSDA Music, aimed at enhancing business insights and decision-making processes. Key tasks included:
+						<br><br>
+						1. City-Based Invoice Analysis:
+
+						City Filter: Identified invoices from cities starting with 'B' (62 invoices) and those containing 'B' anywhere in the city name (83 invoices).
+						Sales Trends: Analyzed invoices from cities starting with 'P' or 'D', resulting in 56 invoices.
+						<br>
+						2. Invoice Categorisation:
+
+						Sales Brackets: Categorised invoices into four sales brackets (baseline, low, target, top performer) and filtered to focus on high-value sales, revealing significant contributions from cities outside the United States.
+						<br>
+						3. Customer and Invoice Data Integration:
+
+						Reporting: Combined customer and invoice data to provide a detailed view of customer interactions and invoice details.
+						<br>
+						4. Top Sales Identification:
+
+						Employee Performance: Highlighted the top 10 highest individual sales and the employees responsible for them.
+						<br>
+						5. Data Quality Enhancements:
+
+						Mailing Address: Created a comprehensive mailing address field for US-based customers and simplified postal codes to the primary five digits.
+						Employee Age Calculation: Calculated and formatted employee ages based on their birthdates.
+						<br>
+						6. Sales Metrics and Comparisons:
+
+						Aggregate Metrics: Calculated total, average, maximum, and minimum global sales.
+						City vs. Global Sales: Compared each city's average sales against the global average.
+						<br>
+						7. Invoice Analysis:
+
+						Below Average Invoices: Filtered invoices with totals lower than the average invoice amount.
+						Unsold Tracks: Identified tracks not currently selling based on invoice line data.
+						<br><br>
+						This project provided WSDA Music with valuable insights into sales trends, customer data, and employee performance, supporting more strategic business decisions and improving data quality and usability.</p>
+				</section>
+
+
+			</div>					
+
+			<!-- Footer -->
+			<footer id="footer">
+				<section>
+					<h2>Contact Information</h2>
+					<dl class="alt">
+						<dt>Phone</dt>
+						<dd>+44 7415821677</dd>
+						<dt>Email</dt>
+						<dd><a href="#">rbenson29@outlook.com</a></dd>
+					</dl>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/ross-benson-43088316a" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://wa.link/rz2y3f" class="icon brands fa-whatsapp alt"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/rbenson__/" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+					</ul>
+				</section>
+				<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+			</footer>
+		</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
