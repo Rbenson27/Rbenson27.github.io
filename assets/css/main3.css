@@ -100,7 +100,7 @@ input, select, textarea {
 
 	body {
 		background-color: #271d26;
-		background-image: url("images/sqlbackground.png"), linear-gradient(45deg, #0c0b0b 15%, #06055a 85%);
+		background-image: url("images/linkedinheader.jfif"), linear-gradient(45deg, #0c0b0b 15%, #06055a 85%);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2616,17 +2616,21 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+        color: #636363
 	}
 
 		ul.icons li {
+            color: #636363;
 			display: inline-block;
 			padding: 0 0.65em 0 0;
+            
 		}
 
 			ul.icons li:last-child {
 				padding-right: 0 !important;
+                color: #636363
 			}
-
+    
 /* Section/Article */
 
 	section.special, article.special {
@@ -3075,11 +3079,13 @@ input, select, textarea {
 
 		#header h1 {
 			margin: 0 0 0.25em 0;
+            color: #636363;
 		}
 
 		#header p {
 			font-size: 1.25em;
 			letter-spacing: -0.025em;
+            color: #636363;
 		}
 
 		#header.alt {
@@ -3218,7 +3224,7 @@ input, select, textarea {
 		width: 100em;
 		max-width: calc(100%);
 		padding: 1em;
-		background-color: #dddada;
+		background-color: #f7f7f7;
 		border-top-left-radius: 0.25em;
 		border-top-right-radius: 0.25em;
 		cursor: default;
@@ -3246,7 +3252,7 @@ input, select, textarea {
 		}
 
 		#nav code {
-			background: rgba(112, 94, 94, 0.25);
+			background: rgba(222, 222, 222, 0.25);
 			border-color: #dddddd;
 		}
 
@@ -3271,9 +3277,8 @@ input, select, textarea {
 				transition: margin 0.2s ease;
 				display: inline-block;
 				margin: 0 0.35em;
-				padding: 1;
+				padding: 0;
 				vertical-align: middle;
-				
 			}
 
 				#nav ul li a {
@@ -3281,14 +3286,13 @@ input, select, textarea {
 					-webkit-transition: font-size 0.2s ease;
 					-ms-transition: font-size 0.2s ease;
 					transition: font-size 0.2s ease;
-					display: inline;
+					display: inline-block;
 					height: 2.25em;
 					line-height: 2.25em;
 					padding: 0 1.25em;
-					border: 2;
-					border-radius: 18px;
+					border: 0;
+					border-radius: 8px;
 					box-shadow: inset 0 0 0 1px transparent;
-					background-color: rgba(181, 184, 185, 0.466);
 				}
 
 					#nav ul li a:hover {
@@ -3296,14 +3300,14 @@ input, select, textarea {
 					}
 
 					#nav ul li a.active {
-						background-color: #bdbcbc;
+						background-color: #ffffff;
 						box-shadow: none;
 					}
 
 		#nav.alt {
 			position: fixed;
 			top: 0;
-			padding: 1.5em 0em;
+			padding: 0.5em 1em;
 			background-color: rgba(247, 247, 247, 0.95);
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
@@ -3693,7 +3697,11 @@ input, select, textarea {
 		width: calc(100% + 2em);
 		margin: 0 0 3em -2em;
 	}
-
+    #footer p {
+        font-size: 1.25em;
+        letter-spacing: -0.025em;
+        color: #636363;
+    }
 		#footer > * {
 			width: calc(50% - 2em);
 			margin-left: 2em;
@@ -3766,6 +3774,22 @@ input, select, textarea {
 		max-width: calc(100% - 4em);
 		margin: 0 auto;
 	}
+    #wrapper p {
+        font-size: 1.25em;
+        letter-spacing: -0.025em;
+        color: #636363;
+    
+    }
+    #wrapper h1, #wrapper h2, #wrapper h3, #wrapper h4, #wrapper h5, #wrapper h6 {
+        color: #636363;
+    }
+    #wrapper dl dt {
+        color: #636363;
+    }
+    #wrapper dd {
+        color: #636363
+    }
+
 
 		@media screen and (max-width: 480px) {
 
